@@ -1,0 +1,127 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #ecf2f8;
+}
+
+
+#testimonialcontainer {
+    padding: 5% 3%;
+}
+
+#testimonial1 {
+    background-color: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial2 {
+    background-color:  #48556a;
+    color: #ffffff;
+}
+
+#testimonial3,
+#testimonial5 {
+    background-color:  #ffffff;
+    color: #48556a;
+}
+
+#testimonial4 {
+    background-color:  #19212e;
+    color: #ffffff;
+}
+
+
+.griditem {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.484);
+    font-size: 13px;
+}
+.griditem p {
+    opacity: 70%;
+}
+.header .name {
+    opacity: 50%;
+    font-size: 1rem;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+.header img {
+    
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid purple;
+}
+
+.griditem h4 {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#quote {
+    position: absolute;
+    right: 15%;
+    top: 0px;
+    height: 135px;
+    z-index: 1;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 576px) {
+
+    #testimonialcontainer,
+    #mainleft,
+    #top,
+    #bottom {
+        display: flex;
+    }
+    #testimonialcontainer {
+        max-width: 1440px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    #top, #bottom {
+        flex-basis: 50%;
+    }
+    #testimonial1, #testimonial4 {
+        flex-basis: 65%;
+    }
+    #testimonial2, #testimonial3 {
+        flex-basis: 35%;
+    }
+    #testimonial5 {
+        flex-basis: 20%;
+    }
+    #mainleft {
+        flex-direction: column;
+        flex-basis: 80%;
+    }
+    #mainleft .griditem {
+        margin-right: 15px;
+    }
+   
+    
+    
+}
